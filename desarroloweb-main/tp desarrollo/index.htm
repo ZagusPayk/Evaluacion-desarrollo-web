@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aaaaa.png" alt="logo">
+            <h2 class="nombre">Taller de CHAVY</h2>
+        </div>
+        <nav>
+            <a href="#quienes-somos" class="nav-link">Quienes somos</a>
+            <a href="#caracteristicas" class="nav-link">Porque elegirnos</a>
+            <a href="#contactos" class="nav-link">Contactos</a>
+        </nav>
+    </header>
+    <section id="quienes-somos">
+        <div class="container">
+
+        <div class="img-container"></div>
+        <h2>Somos el Taller "CHAVY"</h2>
+        <P>Un taller de primera, el cual lleva más de 30 años existiendo. utilizando los mejores materiales y especializándose en todo tipo de vehículos, desde clásicos hasta los más actuales</P>    
+        </div>
+    </section>
+
+    <section id="nuestros-servicios">
+        <div class="container">
+            <h2>Algunos de nuestros servicios</h2>
+            <div class="servicios">
+                <div class="carta">
+                    <h3>Pintura vehiculo completo</h3>
+                    <p>Pintura a todo el vehiculo del color que elijas!!!</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Customizacion de llantas</h3>
+                    <p>Cambio, ya sea de diseño o color de los rines de tu vehiculo</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Instalacion luces neon</h3>
+                    <p>Luces LED o Neon que se instalan ya sea dentro del vehiculo o por fuera las cuales pueden ser de distintos colores a eleccion</p>
+                    <button>+ Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="micarusel">
+        <h3>demostracion de reparaciones</h3>
+        <img src="granizo 1.PNG" alt="a">
+        <img src="granizo 3.PNG" alt="">
+
+    </section>
+    
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✅​Trabajamos con distintas companias de seguros</li>
+                <li>✅​brindamos presupuestos a medida</li>
+                <li>✅​trabajamos con todo tipo de vehiculos</li>
+            </ul>
+            <img src="seguro.jpg" alt="seguro">
+        </div>
+    </section>
+
+    <section id="formulario"></section>
+        <div class="container">
+        <form id="form" action="" method="post"> 
+            <h1>Aquí puede realizar un formulario para que lo asesoremos</h1>
+            <div class="input-control">
+                <label for="nombre y apellido">Nombres Y Apellidos</label>
+                <input id="nombres" name="nombres" type="text" required>
+            </div>
+            <div class="input-control">
+                <label for="email">Correo electronico</label>
+                <input id="email" name="nombres" type="text" required>
+            </div>
+            <div class="input-control">
+                <label for="mensaje">Especifique marca y modelo de su vehiculo</label>
+                <input id="marca" name="nombres" type="text" required>
+            </div>
+            <div class="input-control">
+                <label for="mensaje2">Que servicio le gustaria solicitar</label>
+                <input id="service" name="nombres" type="text" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+        
+
+
+    <section id="contactos">
+        <a href="contactos-link">Telefono: 011-5617-1417 (CABA)</a>
+        <a href="contactos-link">Direccion: Belaustegui 4600 (Monte Castro)</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;taller 2021</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            
+            // Muestra un mensaje de alerta
+            alert('El formulario ha sido enviado exitosamente.');
+            // Redirige a la misma página después de un breve retraso
+            setTimeout(function() {
+                window.location.href = window.location.href;
+            }, 1); // Ajusta el retraso según sea necesario
+        });
+    </script>
+
+</body>
+</html>
+
